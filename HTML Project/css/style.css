@@ -1,0 +1,276 @@
+/* css reset*/
+*{
+    margin: 0;
+    padding: 100;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* css variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* navigation bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+/* logo and image */
+#logo{
+    margin: 10px 35px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+/* list style */
+#navbar{
+    position: sticky;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 520px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url("../background.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* main_course section */
+#main_course{
+    background: url("../text_background.jpg") no-repeat center center/cover;
+}
+
+#main_course .box{
+    border: 2px solid brown;
+    background-color: darksalmon;
+    border-radius: 20px;
+    margin: 8px;
+}
+
+#main_course .box img{
+    height: 200px;
+    margin: 12px;
+    border-radius: 20px;
+}
+
+#main_course .box p{
+    text-align: center;
+    font-family: 'Fuzzy Bubbles', cursive;
+
+}
+
+/* snacks section */
+#snacks{
+    background: url("../text_background.jpg") no-repeat center center/cover;
+}
+
+#snacks .box{
+    border: 2px solid brown;
+    background-color: darksalmon;
+    border-radius: 20px;
+    margin: 8px;
+}
+
+#snacks .box img{
+    height: 200px;
+    margin: 12px;
+    border-radius: 20px;
+}
+
+#snacks .box p{
+    text-align: center;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+/* drinks section */
+#drinks{
+    background: url("../text_background.jpg") no-repeat center center/cover;
+}
+
+#drinks .box{
+    border: 2px solid brown;
+    background-color: darksalmon;
+    border-radius: 20px;
+    margin: 8px;
+}
+
+#drinks .box img{
+    height: 200px;
+    margin: 12px;
+    border-radius: 20px;
+}
+
+#drinks .box p{
+    text-align: center;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+/* sweets section */
+#sweets{
+    background: url("../text_background.jpg") no-repeat center center/cover;
+}
+
+#sweets .box{
+    border: 2px solid brown;
+    background-color: darksalmon;
+    border-radius: 20px;
+    margin: 8px;
+}
+
+#sweets .box img{
+    height: 200px;
+    margin: 12px;
+    border-radius: 20px;
+}
+
+#sweets .box p{
+    text-align: center;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+/*about section*/
+#about{
+    background-color: black;
+}
+#about img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    margin-top: 5px;
+    border-radius: 20px;
+}
+
+#about p{
+    text-align: center;
+    font-size: 2.0rem;
+    padding: 12px;
+    font-family: 'Fuzzy Bubbles', cursive;
+    color: white;
+}
+
+#about p1{
+    text-align: center;
+    font-family: 'Fuzzy Bubbles', cursive;
+    color: white;
+    font-size: 210px;
+}
+
+/* utility classes */
+.h1-primary{
+    background: url("../text_background.jpg") no-repeat center center/cover;
+    color: white;
+    font-size: 2.8rem;
+    margin: -8px;
+    padding: 12px;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+.h-secondary{
+    font-size: 2rem;
+    padding: 12px;
+    font-family: 'Fuzzy Bubbles', cursive;
+    text-align: center;
+}
+
+.h2-primary{
+    text-align: center;
+    background: url("../text_background.jpg") no-repeat center center/cover;
+    color: white;
+    font-size: 2.8rem;
+    margin: -8px;
+    padding: 12px;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+.btn{
+    padding: 6px 20px;
+    border-collapse: 2px solid white;
+    background-color: grey;
+    color: none;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#center{
+    text-align: center;
+}
